@@ -1,0 +1,25 @@
+db:
+  image: mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=cooclhas
+  volumes:
+    - ./mysql/data:/var/lib/mysql
+    - ./mysql/schemas:/docker-entrypoint-initdb.d
+
+dovecot:
+  build: ./docker-dovecot
+  links:
+    - db:db
+    - postfix:postfix
+  ports:
+    - 127.0.0.1:143:143
+    - 127.0.0.1:993:993
+
+postfix:
+  build: ./docker-postfix
+  environment:
+    - MAIL_NAME=mail.example.com
+  links:
+    - db:db
+  ports:
+    - 127.0.0.1:25:25

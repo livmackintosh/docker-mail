@@ -1,0 +1,26 @@
+                         LEGAL NOTICES      
+
+  The project "docker-mail" is a work that contains many third-party
+projects. This text is not a legal document but rather a notice based
+on the interpretation of the the third-party projects' licence
+documents.
+
+                 Notice Regarding Included Works
+
+  There are several other projects that either are either, contained
+in the source code, or will be included into the non-source form during
+compilation. The GNU General Public License does not apply to these
+works. Instead, you should see their own individual licenses regarding
+those works.
+
+               Notice Regarding Used 3rd-Party Works
+
+  In the context of the docker-mail project, "used" 3rd-party works are
+works that are used in the project but not included directly in the
+source. Instead, the location of the sources of these works are
+referenced and used during the build/compilation process and therefore
+may be included in any binary releases.
+
+                   List of Used 3rd-Party Works
+  
+  TREES - https://0xacab.org/riseuplabs/trees - Licence: GPLv3
